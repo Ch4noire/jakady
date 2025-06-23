@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Créer un fond - Jakady</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h2 class="title">Créer un fond bibliographique</h2>
+
+    <form class="formulaire" onsubmit="return false;">
+      <label>Nom du fond :
+        <input type="text" name="nom" placeholder="ex : Bibliothèque de Mme X" />
+      </label>
+
+      <label>Origine du fond :
+        <input type="text" name="origine" placeholder="ex : Héritage familial, achat, etc." />
+      </label>
+
+      <label>Statut notarial :
+        <select name="statut">
+          <option>Succession</option>
+          <option>Donation</option>
+          <option>Vente</option>
+          <option>Autre</option>
+        </select>
+      </label>
+
+      <label>Personnes de contact :</label>
+      <div class="contact-bloc">
+        <input type="text" placeholder="Nom Prénom" />
+        <input type="text" placeholder="Profession" />
+        <input type="email" placeholder="Mail" />
+        <input type="tel" placeholder="Portable" />
+        <input type="text" placeholder="Adresse postale" />
+      </div>
+
+      <button type="submit" class="btn">Enregistrer</button>
+      <a href="index.html" class="btn retour">🏠 Menu principal</a>
+    </form>
+  </div>
+</body>
+</html>
