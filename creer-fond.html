@@ -6,6 +6,13 @@
   <title>Créer un fond - Jakady</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+  <script>
+  document.querySelector('.formulaire').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert("Le fond a bien été enregistré ✅");
+    // Ici on pourra ajouter le code pour stocker les infos
+  });
+</script>
 <body>
   <div class="app">
     <h2 class="title">Créer un fond bibliographique</h2>
